@@ -22,8 +22,8 @@ func main() {
 				fmt.Fprintln(os.Stderr, err)
 				os.Exit(1)
 			}
+			run(scn.Text(), n, r)
 		}
-		run(scn.Text(), n, r)
 	} else {
 		run((flag.Args())[0], n, r)
 	}
